@@ -11,6 +11,7 @@ services:
     working_dir: /var/www/html
     depends_on:
       - mysql
+    command: tail -f /dev/null
 
   mysql:
     image: mysql:8.0
